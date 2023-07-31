@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(182, 100%, 75%);
+}
+
+#card .form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+#card .form .result {
+    margin: 1rem auto 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#card .form .result::selection {
+    user-select: none;
+}
+
+#card .form .label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#card .form .input {
+    margin-bottom: 1rem;
+    padding: 5px;
+    font-weight: 300;
+}
+
+#card .form .check_btn {
+    margin: 1rem auto 0;
+    padding: 0.5rem 2rem;
+}
+
+
+#count_part {
+    width: 100%;
+    height: 100vh;
+    background: #a8ecac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#count_part .count_box {
+    display: flex;
+}
+
+#count_part .hello {
+    width: 250px;
+    height: 140px;
+    background: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#count_part .hello .hello_sub {
+    font-size: 35px;
+    font-weight: 600;
+    color: #444;
+}
+
+#count_part .hello .hello_num {
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(0, 98, 190);
+}
+
+
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    .title {
+        font-size: 25px;
+        margin-bottom: 1rem;
+        width: 260px;
+    }
+
+    #card .form {
+        width: 19rem;
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    #card .form .label {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    #card .form .input {
+        margin-bottom: .5rem;
+        font-weight: 300;
+    }
+
+    #card .form .result {
+        margin: 1rem auto 0;
+        font-size: 26px;
+    }
+
+    #card .form .check_btn {
+        margin: .5rem auto 0;
+        padding: .5rem 2rem;
+    }
+
+    #count_part .hello {
+        width: 100px;
+        height: 70px;
+        margin: .3rem;
+        border-radius: .5rem;
+        padding: 10px 10px;
+    }
+
+    #count_part .hello .hello_sub {
+        font-size: 14px;
+    }
+
+    #count_part .hello .hello_num {
+        font-size: 27px;
+        line-height: 25px;
+    }
+}
